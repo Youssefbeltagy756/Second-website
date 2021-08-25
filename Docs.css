@@ -1,0 +1,88 @@
+.sideBar
+{
+    width: 30%;
+    height: fit-content;
+    background-color: rgb(179, 174, 174,0.7);
+    margin: 20px;
+    overflow: visible;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+    padding: 30px;
+}
+.Content
+{
+    width: 70%;
+    height: 40px;
+    height: fit-content;
+    margin: 20px;
+    overflow: visible;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+    padding: 30px;
+}
+.Info
+{
+    background-color: green;
+    padding: 5px;
+    margin: 2.5px;
+}
+.Info :hover
+{
+    cursor: pointer;
+}
+/*Side Bar*/
+.SideTitle
+{
+    font-weight: 900;
+    font-size: 100%;
+    width: 90%;
+    color: #1034A6;
+}
+
+.SideList
+{
+    display: grid; 
+    float: left;
+    margin: 10px;
+}
+.LinkBar
+{
+    color: black;
+}
+.LinkBar:hover
+{
+   color: white;
+}
+/*Media Queries*/
+
+@media (max-width:850px)
+{
+    .Container4
+    {
+        display: grid;
+        width: 90%;
+    }
+    .Content
+    {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+    .sideBar
+    {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .SideList
+    {
+        float: none;
+    }
+    .SideTitle
+    {
+        font-size: 130%;
+    }
+    .Img
+    {
+        height: 35px;
+        width: 35px;
+        margin: 5px;
+    }
+}

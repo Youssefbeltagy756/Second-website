@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/*Main*/
+
+body
+{
+    font-family: 'Lato';
+    background-image: "Back.jpg";
+    font-size: 25px;
+    font-weight: 500;
+}
+
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+h1
+{
+    font-size: 40px;
+}
+/*Background Image*/
+
+.ImagePart
+{
+    background-color:  #1034A6;
+    height: fit-content;
+    padding-bottom: 80px;
+}
+
+/*NavBar*/
+
+.NavBar
+{
+    height: fit-content;
+    background-color: rgba(29, 29, 78, 0.1);
+}
+.Container
+{
+    height: 100%;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Title
+{
+   float: left;
+   height: 100%;
+   width: 30%;
+}
+.TheList
+{
+   float: right;
+   height: 100%;
+   width: 70%;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+ul
+{
+    list-style: none;
+    float: right;
+    display: flex;
+}
+li
+{
+    padding: 4px 10px;
+    font-size: 17px;
+}
+li:hover{
+    border-bottom: solid 2px white;
+}
+/*ShowCase*/
+
+.ExpMore
+{
+    height: fit-content;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.ExpMore h2
+{
+    font-size: 200%;
+}
+.ExpMore p
+{
+    font-size: 70%;
+}
+p
+{
+    font-size: 80%;
+}
+
+/*Buttons*/
+
+button
+{
+    font-size: 14px;
+    background-color: rgb(4, 4, 245,0.7);
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-right: 10px;
+}
+button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+/*Descreption*/
+
+.DescPart
+{
+    width: 100%;
+    height: fit-content;
+}
+.SmallDiv
+{
+    width: 60%;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    overflow: visible;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+.Paragrapgh
+{
+    padding: 30px;
+    float: left;
+    width: 70%;
+    background-color: rgb(4, 4, 245,0.7);
+    height: 250px;
+    font-size: 17px;
+    padding-top: 30px;
+    color: white;
+    font-weight: 500;
+}
+.Paragrapgh p
+{
+    font-size: 100%;
+}
+.Icon
+{
+    width: 30%;
+    float: right;
+    background-color: rgb(4, 4, 245,0.7);
+    padding: 30px;
+    height: 250px;
+}
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*Media Query*/
+
+@media (max-width: 780px)
+{
+    body
+    {
+        font-size: 100%;
+    }
+    .Container
+    {
+        display: grid;
+        margin: 0 auto;
+        background-color: rgb(4, 4, 245,0.7);
+        width: 100%;
+    }
+    .Title 
+    {
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+    .TheList
+    {
+        margin: 0 60px;
+        justify-content: center;
+    }
+    .SmallDiv
+    {
+        display: grid;
+    }
+    .Icon
+    {
+        width: 100%;
+        margin: 0 auto;
+        height: 200px;
+    }
+    .Paragrapgh
+    {
+        width: 100%;
+        padding-bottom: 30px;
+        height: fit-content;
+    }
+    .Paragrapgh p
+    {
+        font-size: 70%;
+    }
+    button
+    {
+        font-size: 70%;
+    }
+}
